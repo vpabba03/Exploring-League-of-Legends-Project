@@ -88,7 +88,35 @@ To demonstrate the relationship between the proportion of deaths to the proporti
 | ('top', 'mean')   | 2.79474 |   5.02498 |       232.843 |  2.95333 |
 | ('top', 'median') | 2       |   4       |       230     |  3       |
 
-## 
+## **Assessment of Missingness**
+
+### NMAR Analysis
+
+The column that could be **Not Missing at Random (NMAR)** is `damagemitigatedperminute` in the League of Legends dataset. This is because we believe that the values in this column depend on the way the data is designed, and not another column in the dataset. Different champions in League of Legends have varying abilities and roles. Some champions are designed to mitigate damage, such as tanks or supports, while others are focused on dealing damage. This leads to inherent variations in the amount of damage mitigated per minute across different champions and roles. 
+
+In order to mitigate this, a `type` column could be introduced that describes a particular quality of each champion. This type column would specify whether the champion mitigates or deals damage, or whether it mitigates it at all. Thus, the damage mitigated can be justified, making the column **Missing at Random (MAR)**. 
+
+### Missingness Analysis
+
+The columns in the League of Legends dataset that contain missing values are `baron`, `opp_baron`, and `ban3`. Therefore, we are conducting two permutation tests against the `baron` column to check whether the missingness in the `champion` column is MAR or MCAR with respect to the other columns. We will conduct these tests with an alpha value of 0.05. 
+
+Here, we will be using TVD as our test statistic in the permutation test as we are dealing with categorical values.
+
+#### Null Hypothesis: There is no significant difference between the distribution of the ‘baron’ column whether the other column is missing or not missing. 
+
+#### Alternative Hypothesis: There is a significant difference between the distribution of the ‘baron’ column whether the other column is missing versus not missing. 
+
+#### Results:
+
+These are the following p-values from the experiments that we conducted: 
+
+`opp_barons` : 0.05
+`ban3` : 0.59
+
+For the type of ban3, the resulting p-value we got is 0.02. This is below the significance level of 0.05 that we picked. Hence, we can say that our test was statistically significant, and we can reject our null hypothesis. Therefore, we can say that the values in the champion column are probably dependant on the values in the.
+
+
+
 
 
 
