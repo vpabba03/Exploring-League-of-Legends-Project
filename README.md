@@ -55,6 +55,8 @@ Finally, the last thing we had to do was use boolean indexing on the dataframe t
 
 **The top 5 rows of our resulting dataframe are shown here**: 
 
+<div class="table-wrapper" markdown="block">
+
 | gameid                | datacompleteness   |   game | side   | position   |   barons |   opp_barons |   kills |   deaths |   assists |   teamkills |   teamdeaths |   minionkills |   teamminionkills |   teamassists |   prop_kills |   prop_deaths |   prop_assists |   prop_minions |
 |:----------------------|:-------------------|-------:|:-------|:-----------|---------:|-------------:|--------:|---------:|----------:|------------:|-------------:|--------------:|------------------:|--------------:|-------------:|--------------:|---------------:|---------------:|
 | ESPORTSTMNT01_2690210 | complete           |      1 | Blue   | top        |        0 |            0 |       2 |        3 |         2 |           9 |           19 |           220 |              1360 |            38 |    0.222222  |      0.157895 |      0.0526316 |       0.161765 |
@@ -62,6 +64,8 @@ Finally, the last thing we had to do was use boolean indexing on the dataframe t
 | ESPORTSTMNT01_2690210 | complete           |      1 | Red    | top        |        0 |            0 |       1 |        1 |        12 |          19 |            9 |           221 |              1584 |           124 |    0.0526316 |      0.111111 |      0.0967742 |       0.13952  |
 | ESPORTSTMNT01_2690210 | complete           |      1 | Red    | bot        |        0 |            0 |       8 |        2 |        10 |          19 |            9 |           299 |              1584 |           124 |    0.421053  |      0.222222 |      0.0806452 |       0.188763 |
 | ESPORTSTMNT01_2690219 | complete           |      1 | Blue   | top        |        0 |            0 |       0 |        5 |         2 |           3 |           16 |           241 |              1988 |            14 |    0         |      0.3125   |      0.142857  |       0.121227 |
+
+</div>
 
 ### Univariate Analysis
 
