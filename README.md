@@ -22,6 +22,7 @@ There were originally 123 columns within the dataset and 149,400 rows of data. B
 | position           | The position that the individual plays                                 |  
 | barons             | The number of times the team killed the Baron Nashor monster                                   |
 | opp_barons         | The number of times the opposing team killed the Baron Nashor monster                                  | 
+| ban2               | The second character the team banned in the match                                  | 
 | kills              | The number of kills the individual got in the match                                   |
 | deaths             | The number of times the individual died in the match                                   | 
 | assists            | The number of assists the individual got in the match                                   |
