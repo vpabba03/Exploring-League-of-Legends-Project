@@ -75,7 +75,7 @@ To demonstrate the relationship between the number of kills and the position a p
 
 ### Bivariate Analysis
 
-
+<iframe src="assets/kills_biv.html" width=800 height=600 frameBorder=0></iframe>
 
 ### Interesting Aggregates
 
