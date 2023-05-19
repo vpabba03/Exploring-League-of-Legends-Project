@@ -132,3 +132,5 @@ For the type of ban3, the resulting p-value we got is 0.02. This is below the si
 
 
 
+
+
