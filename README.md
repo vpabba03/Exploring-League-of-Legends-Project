@@ -81,6 +81,7 @@ To demonstrate the relationship between the proportion of deaths to the proporti
 
 ### Interesting Aggregates
 
+We did a groupby on `position` for either top lane or bot lane, and applied two aggregates, `mean` and `median`, to the `kills`, `assists`, `minionkills` and `deaths` columns. This grouped dataframe shows the average number and median value of the game statisitcs we are exploring by the position. As the dataframe shows, the bot lane has a higher average assists and minionkills, but a lower average of kills and deaths. It also shows that the bot lane has a higher median value of kills, assists and minion kills, but a lower median in the deaths column relative to the top lane. 
 
 <div class="table-wrapper" markdown="block">
 
@@ -122,7 +123,54 @@ For the type of ban3, the resulting p-value we got is 0.02. This is below the si
 
 ## Hypothesis Testing
 
+### Hypotheses
 
+To answer our original question of which lane "carries" their team more, we will conduct a hypothesis test using a significance level of 𝛼 = 0.05. Our hypotheses are below:
+
+- **Null Hypothesis** : There is no significant difference between the distributions of the performance statistic between players that play top lane and players that play bottom lane. 
+
+- **Alternate Hypothesis** : There is a significant difference between the distributions of the performance statistic between players that play top lane and players that play bottom lane.
+
+### Making a Performance Metric Column
+
+We added a new column called `perf_metric` which represents the calculated performance metric for each player. We calculated this value using a ratio of proportion of kills, assists, and minion kills to proportion of deaths. 
+
+If the proportion of deaths is 0, then we would only calculate the sum of the proportion of kills, assists, and minion kills. 
+
+**The top 5 columns of the updated dataframe are shown below**:
+
+
+| gameid                | datacompleteness   |   game | side   | position   |   barons |   opp_barons |   kills |   deaths |   assists |   teamkills |   teamdeaths |   minionkills |   teamminionkills |   teamassists |   prop_kills |   prop_assists |   prop_deaths |   prop_minions |   perf_metric |
+|:----------------------|:-------------------|-------:|:-------|:-----------|---------:|-------------:|--------:|---------:|----------:|------------:|-------------:|--------------:|------------------:|--------------:|-------------:|---------------:|--------------:|---------------:|--------------:|
+| ESPORTSTMNT01_2690210 | complete           |      1 | Blue   | top        |        0 |            0 |       2 |        3 |         2 |           9 |           19 |           220 |              1360 |            38 |    0.222222  |      0.0526316 |      0.157895 |       0.161765 |       2.76525 |
+| ESPORTSTMNT01_2690210 | complete           |      1 | Blue   | bot        |        0 |            0 |       2 |        4 |         2 |           9 |           19 |           208 |              1360 |            38 |    0.222222  |      0.0526316 |      0.210526 |       0.152941 |       2.03203 |
+| ESPORTSTMNT01_2690210 | complete           |      1 | Red    | top        |        0 |            0 |       1 |        1 |        12 |          19 |            9 |           221 |              1584 |           124 |    0.0526316 |      0.0967742 |      0.111111 |       0.13952  |       2.60033 |
+| ESPORTSTMNT01_2690210 | complete           |      1 | Red    | bot        |        0 |            0 |       8 |        2 |        10 |          19 |            9 |           299 |              1584 |           124 |    0.421053  |      0.0806452 |      0.222222 |       0.188763 |       3.10707 |
+| ESPORTSTMNT01_2690219 | complete           |      1 | Blue   | top        |        0 |            0 |       0 |        5 |         2 |           3 |           16 |           241 |              1988 |            14 |    0         |      0.142857  |      0.3125   |       0.121227 |       0.84507 |
+
+### Using a KS-Test
+
+To conduct the test, we are we are picking a Kolmogorov-Smirinov (KS) test with both values, we noticed that they were quantitative and had similar means, but their kernel density estimate plots had different shapes, as shown below.
+
+<iframe src="assets/kstest.html" width=800 height=600 frameBorder=0></iframe>
+
+### Running a Permutation Test
+
+We first caluclated our KS test statistic using the `ks_2samp` function from the `scipy.stats` package. 
+
+After running a permutation test of 500 repetitions on the shuffling he values in the `perf_metric` column, we recieved an array of KS statistics. After going ahead and plotting the distribution of the statistics against our original KS test statistic.
+
+The resulting distribution is shown here: 
+
+<iframe src="assets/empdist.html" width=800 height=600 frameBorder=0></iframe>
+
+### Conclusion
+
+As seen in the distributon above, we had a reuslting p-value of 0.0, which is less than out significance level of 0.05. This means that our test was statistically significant and we **accept the null hypothesis**. 
+
+This means that there is a significant difference in the performance and contribution to the success of the team between players that play top lane and players that play bottom lane. 
+
+The choice of test to use the KS-Test makes sense because of the plots outputted by the kernel density function graphs being different shapes for both groups, but also the fact that our hypotheses were testing for a difference betweent the two groups, not whether one group "carried" more than the other group. Also, our result is in line with the univariate and bivariate plots we created earlier, and our aggregate which showed some difference in the performance and contribution of both players that play top lane and players that play bot lane.
 
 
 
