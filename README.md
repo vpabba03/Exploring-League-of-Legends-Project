@@ -1,7 +1,8 @@
 # Top Lane Vs. Bot Lane: Who Actually Carries?
-## Vishwak Pabba and Manav Jairam
+### Vishwak Pabba and Manav Jairam
 
-1. [Introduction](introduction)
+## Table of Contents
+{: .no_toc .text-delta }
 
 ## **Introduction**
 League of Legends is an online, multiplayer game where players in teams of 5 battle each other in Summoner's Rift, a massive arena that has an expansive environment and monsters. Players fight against each other to destroy the enemy by toppling turrets and non-playable minions, slowly advancing through 1 of 3 lanes (top, bottom, middle) towards their enemies' nexus crystal. When a team destroys their enemy nexus crystal located in their base, they ultimatly win the game.
