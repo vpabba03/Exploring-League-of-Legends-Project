@@ -120,6 +120,8 @@ These are the following p-values from the experiments that we conducted:
 
 For the type of ban3, the resulting p-value we got is 0.02. This is below the significance level of 0.05 that we picked. Hence, we can say that our test was statistically significant, and we can reject our null hypothesis. Therefore, we can say that the values in the champion column are probably dependant on the values in the.
 
+## Hypothesis Testing
+
 
 
 
