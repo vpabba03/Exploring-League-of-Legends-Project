@@ -81,15 +81,14 @@ To demonstrate the relationship between the proportion of deaths to the proporti
 
 ### Interesting Aggregates
 
+|                   |   kills |   assists |   minionkills |   deaths |
+|:------------------|--------:|----------:|--------------:|---------:|
+| ('bot', 'mean')   | 4.2588  |   5.37153 |       256.718 |  2.54763 |
+| ('bot', 'median') | 4       |   5       |       256     |  2       |
+| ('top', 'mean')   | 2.79474 |   5.02498 |       232.843 |  2.95333 |
+| ('top', 'median') | 2       |   4       |       230     |  3       |
 
-
-|   kills |   assists |   minionkills |   deaths |
-|--------:|----------:|--------------:|---------:|
-| 4.2588  |   5.37153 |       256.718 |  2.54763 |
-| 4       |   5       |       256     |  2       |
-| 2.79474 |   5.02498 |       232.843 |  2.95333 |
-| 2       |   4       |       230     |  3       |
-
+## 
 
 
 
