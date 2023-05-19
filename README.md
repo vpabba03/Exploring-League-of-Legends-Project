@@ -65,7 +65,7 @@ Finally, the last thing we had to do was use boolean indexing on the dataframe t
 
 ### Univariate Analysis
 
-
+<iframe src="assets/kills_uni.html" width=800 height=600 frameBorder=0></iframe>
 
 ### Bivariate Analysis
 
