@@ -63,6 +63,14 @@ Finally, the last thing we had to do was use boolean indexing on the dataframe t
 | ESPORTSTMNT01_2690210 | complete           |      1 | Red    | bot        |        0 |            0 |       8 |        2 |        10 |          19 |            9 |           299 |              1584 |           124 |    0.421053  |      0.222222 |      0.0806452 |       0.188763 |
 | ESPORTSTMNT01_2690219 | complete           |      1 | Blue   | top        |        0 |            0 |       0 |        5 |         2 |           3 |           16 |           241 |              1988 |            14 |    0         |      0.3125   |      0.142857  |       0.121227 |
 
+### Univariate Analysis
+
+
+
+### Bivariate Analysis
+
+### Interesting Aggregates
+
 
 
 
