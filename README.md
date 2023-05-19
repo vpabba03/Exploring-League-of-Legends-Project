@@ -75,11 +75,20 @@ To demonstrate the relationship between the number of kills and the position a p
 
 ### Bivariate Analysis
 
-To demonstrate the relationship between the proportion of deaths to the proportion of kills, we created the catterplot below. The individual points represent the relationship between the proportion of deaths to the proportions of killds, where the blue points represents players in the top lane and the red points represents players in the bottom lane. To reduce the clutter of the plot, we grouped by the proportion of kills and got the mean proportion of deaths of each group. This way, we are able to view the relationship for each lane in a more clear manner. Although there is little correlation, it can be reasonably said that players in the top lane
+To demonstrate the relationship between the proportion of deaths to the proportion of kills, we created the catterplot below. The individual points represent the relationship between the proportion of deaths to the proportions of killds, where the blue points represents players in the top lane and the red points represents players in the bottom lane. To reduce the clutter of the plot, we grouped by the proportion of kills and got the mean proportion of deaths of each group. This way, we are able to view the relationship for each lane in a more clear manner. Although there is little correlation, it can be reasonably said that players in the top lane generally had an equivalent ratio of their proportion of deaths to their proportion of kills to players in the bottom lane. Although there are some differences between the two groups, the ratios are equivalent for a large majority of the time.
 
 <iframe src="assets/kills_bivar.html" width=800 height=600 frameBorder=0></iframe>
 
 ### Interesting Aggregates
+
+
+
+|   kills |   assists |   minionkills |   deaths |
+|--------:|----------:|--------------:|---------:|
+| 4.2588  |   5.37153 |       256.718 |  2.54763 |
+| 4       |   5       |       256     |  2       |
+| 2.79474 |   5.02498 |       232.843 |  2.95333 |
+| 2       |   4       |       230     |  3       |
 
 
 
