@@ -69,9 +69,13 @@ Finally, the last thing we had to do was use boolean indexing on the dataframe t
 
 ### Univariate Analysis
 
+To demonstrate the relationship between the number of kills and the position a player plays, we created the histograms below. The histograms displays the frequeuncy of different number of kills, where the blue histogram represents players in the top lane and the red histogram represents players in the bottom lane. As the histograms demonstrate, players that play in the bottom lane generally have a higher frequency as the number of kills increases, but players that play in top lane consistently have a higher frequency as the number of kills decreases.
+
 <iframe src="assets/kills_uni.html" width=800 height=600 frameBorder=0></iframe>
 
 ### Bivariate Analysis
+
+
 
 ### Interesting Aggregates
 
