@@ -166,7 +166,7 @@ The resulting distribution is shown here:
 
 ### Conclusion
 
-As seen in the distributon above, we had a reuslting p-value of 0.0, which is less than out significance level of 0.05. This means that our test was statistically significant and we **accept the null hypothesis**. 
+As seen in the distributon above, we had a reuslting p-value of 0.0, which is less than out significance level of 0.05. This means that our test was statistically significant and we **fail to accept the null hypothesis**. 
 
 This means that there is a significant difference in the performance and contribution to the success of the team between players that play top lane and players that play bottom lane. 
 
