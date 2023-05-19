@@ -75,7 +75,9 @@ To demonstrate the relationship between the number of kills and the position a p
 
 ### Bivariate Analysis
 
-<iframe src="assets/kills_biv.html" width=800 height=600 frameBorder=0></iframe>
+To demonstrate the relationship between the proportion of deaths to the proportion of kills, we created the catterplot below. The individual points represent the relationship between the proportion of deaths to the proportions of killds, where the blue points represents players in the top lane and the red points represents players in the bottom lane. To reduce the clutter of the plot, we grouped by the proportion of kills and got the mean proportion of deaths of each group. This way, we are able to view the relationship for each lane in a more clear manner. Although there is little correlation, it can be reasonably said that players in the top lane
+
+<iframe src="assets/kills_bivar.html" width=800 height=600 frameBorder=0></iframe>
 
 ### Interesting Aggregates
 
