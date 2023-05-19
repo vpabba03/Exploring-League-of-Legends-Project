@@ -150,15 +150,15 @@ If the proportion of deaths is 0, then we would only calculate the sum of the pr
 
 ### Using a KS-Test
 
-To conduct the test, we are we are picking a Kolmogorov-Smirinov (KS) test with both values, we noticed that they were quantitative and had similar means, but their kernel density estimate plots had different shapes, as shown below.
+To conduct the test, we are we are picking a Kolmogorov-Smirinov (KS) test using the means of `perf_metric` for each position. We noticed that they were quantitative and had similar means, but their kernel density estimate plots had different shapes, as shown below.
 
 <iframe src="assets/kstest.html" width=800 height=600 frameBorder=0></iframe>
 
 ### Running a Permutation Test
 
-We first caluclated our KS test statistic using the `ks_2samp` function from the `scipy.stats` package. 
+We first caluclated our KS test statistic using the `ks_2samp` function from the `scipy.stats` package. We ran the `ks_2samp` function on the `perf_metric` column of our dataframe. 
 
-After running a permutation test of 500 repetitions on the shuffling he values in the `perf_metric` column, we recieved an array of KS statistics. After going ahead and plotting the distribution of the statistics against our original KS test statistic.
+After running a permutation test of 500 repetitions on the shuffling the values in the `perf_metric` column, we recieved an array of KS statistics. After going ahead and plotting the distribution of the statistics against our original KS test statistic.
 
 The resulting distribution is shown here: 
 
