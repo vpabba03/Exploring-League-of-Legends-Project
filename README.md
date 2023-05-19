@@ -11,6 +11,25 @@ Over the course of the project, we cleaned the dataset for the necessary columns
 
 ## About the Dataset
 
+There were originally 123 columns within the dataset and 149,400 rows of data. Because we only required a subset of the columns for our analysis, we ended up reducing the number of columns to 13.
+
+| Syntax             | Description                            | 
+| :---               |    :----:                              |
+| gameid             | The unique id for the match                                  | 
+| datacompleteness   | Informs whether the data is complete or partial                             |
+| game               | The match number in the series of the specific set of games                                  | 
+| side               | The side that the individual playing on (red or blue)                                   |
+| position           | The position that the individual plays                                 |  
+| barons             | The number of times the team killed the Baron Nashor monster                                   |
+| opp_barons         | The number of times the opposing team killed the Baron Nashor monster                                  | 
+| kills              | The number of kills the individual got in the match                                   |
+| deaths             | The number of times the individual died in the match                                   | 
+| assists            | The number of assists the individual got in the match                                   |
+| teamkills          | The total number of kills the team of the individual got                                  | 
+| teamdeaths         | The number of times the team had died in the match                                  |
+| minionkills        | The number of minions the individual killed in the match                                  | 
+
+
 ## **Question** 
 The question we decided to study was: Do players that play in the top lane and players that play in the bottom (bot) lane "carry" the same amount during matches? 
 
@@ -21,17 +40,6 @@ Generally, it is a hot topic among League of Legends players on which lane is th
 ## Data Cleaning and Exploratory Data Analysis
 
 ### Importing Relevant Packages
-'''
-import pandas as pd
-import numpy as np
-import os
-
-import plotly.express as px
-import plotly.figure_factory as ff
-import plotly.graph_objects as go
-pd.options.plotting.backend = 'plotly'
-'''
-
 - **pandas** : pack
 
 
