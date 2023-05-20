@@ -176,12 +176,11 @@ The resulting distribution is shown here:
 
 ### Conclusion
 
-As seen in the distributon above, we had a reuslting p-value of 0.0, which is less than out significance level of 0.05. This means that our test was statistically significant and we **fail to accept the null hypothesis**. 
+Because our p-value was below the significane level, that means that our test was statistically significant and we **reject the null hypothesis**. 
 
-This means that there is a significant difference in the performance and contribution to the success of the team between players that play top lane and players that play bottom lane. 
+This means that there is likely a significant difference in the performance and contribution to the success of the team between players that play top lane and players that play bottom lane. 
 
 The choice of test to use the KS-Test makes sense because of the plots outputted by the kernel density function graphs being different shapes for both groups, but also the fact that our hypotheses were testing for a difference betweent the two groups, not whether one group "carried" more than the other group. Also, our result is in line with the univariate and bivariate plots we created earlier, and our aggregate which showed some difference in the performance and contribution of both players that play top lane and players that play bot lane.
-
 
 
 
