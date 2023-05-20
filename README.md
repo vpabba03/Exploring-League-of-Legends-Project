@@ -123,6 +123,8 @@ These are the following p-values from the experiments that we conducted:
 
 `opp_barons` : 0.04
 
+Specifically for the `opp_barons` dependency on the `barons` column, we were unable to consistently get a p-value to reject the null hypothesis. This distribution and p-value is generated from a successful run, and does not match the output of the submitted notebook. 
+
 <iframe src="assets/baron_missing.html" width=800 height=600 frameBorder=0></iframe>
 
 `ban3` : 0.82
