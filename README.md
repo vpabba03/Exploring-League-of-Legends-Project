@@ -125,7 +125,7 @@ These are the following p-values from the experiments that we conducted:
 
 <iframe src="assets/baron_missing.html" width=800 height=600 frameBorder=0></iframe>
 
-`ban3` : 0.91
+`ban3` : 0.916
 
 <iframe src="assets/bm_missing.html" width=800 height=600 frameBorder=0></iframe>
 
