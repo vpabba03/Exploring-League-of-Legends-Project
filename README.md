@@ -103,11 +103,15 @@ The column that could be **Not Missing at Random (NMAR)** is `damagemitigatedper
 
 In order to mitigate this, a `type` column could be introduced that describes a particular quality of each champion. This type column would specify whether the champion mitigates or deals damage, or whether it mitigates it at all. Thus, the damage mitigated can be justified, making the column **Missing at Random (MAR)**. 
 
+<iframe src="assets/.html" width=800 height=600 frameBorder=0></iframe>
+
 ### Missingness Analysis
 
 The columns in the League of Legends dataset that contain missing values are `baron`, `opp_baron`, and `ban3`. Therefore, we are conducting two permutation tests against the `baron` column to check whether the missingness in the `champion` column is MAR or MCAR with respect to the other columns. We will conduct these tests with an alpha value of 0.05. 
 
 Here, we will be using TVD as our test statistic in the permutation test as we are dealing with categorical values.
+
+<iframe src="assets/kstest.html" width=800 height=600 frameBorder=0></iframe>
 
 #### Null Hypothesis: There is no significant difference between the distribution of the ‘baron’ column whether the other column is missing or not missing. 
 
