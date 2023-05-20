@@ -125,9 +125,9 @@ These are the following p-values from the experiments that we conducted:
 
 <iframe src="assets/baron_missing.html" width=800 height=600 frameBorder=0></iframe>
 
-`ban3` : 0.916
+`ban3` : 0.973
 
-<iframe src="assets/bm_missing.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/bmmiss.html" width=800 height=600 frameBorder=0></iframe>
 
 Our observation while testing for missing values was that we were not able to get accurate results where we could reject the null hypothesis for most columns we chose to check for missingness. We noticed that most columns were either MD or MCAR, and not necessarily totally dependant on another column. Hence, we could not get a statistically significant conclusion based on this test.
 
